@@ -1,2 +1,2 @@
 # Hello-World
-teste build in Java
+repo para testes de CI/CD em Java
