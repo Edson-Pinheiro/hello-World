@@ -16,20 +16,32 @@
   </dependencies>
 
   <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jar-plugin</artifactId>
-        <version>3.2.0</version>
-        <configuration>
-          <archive>
-            <manifest>
-              <mainClass>com.pinheiro.App</mainClass> <!-- Classe principal -->
-            </manifest>
-          </archive>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
+  <plugins>
+    <!-- Plugin para compilar o código Java -->
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-compiler-plugin</artifactId>
+      <version>3.8.1</version>
+      <configuration>
+        <source>1.8</source>  <!-- Definindo a versão mínima do Java -->
+        <target>1.8</target>  <!-- Definindo a versão mínima do Java -->
+      </configuration>
+    </plugin>
+
+    <!-- Plugin para empacotar o JAR -->
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-jar-plugin</artifactId>
+      <version>3.2.0</version>
+      <configuration>
+        <archive>
+          <manifest>
+            <mainClass>com.pinheiro.App</mainClass> <!-- Classe principal -->
+          </manifest>
+        </archive>
+      </configuration>
+    </plugin>
+  </plugins>
+</build>
 
 </project>
