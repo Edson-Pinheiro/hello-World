@@ -8,7 +8,7 @@
   <packaging>pom</packaging>
 
   <modules>
-    <module>src/main</module> <!-- O diretório do módulo -->
+    <module>src/</module> <!-- O diretório do módulo -->
   </modules>
 
   <dependencyManagement>
